@@ -1,0 +1,6 @@
+<button (click)="getItems()">click</button>
+<div *ngFor="let item of (items$ | async)?.item">
+    {{item.title}}
+</div>
+
+<router-outlet></router-outlet>
